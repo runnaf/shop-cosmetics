@@ -1,6 +1,5 @@
 import { ButtonCart } from "../../ui/ButtonCart/ButtonCart";
 import './style.css'
-import check from '../../../img/check.svg'
 
 export function Modal({active, setActive, good, quantity, path2}) {
   const getClosedModal = () => {setActive(false)}
@@ -15,7 +14,7 @@ export function Modal({active, setActive, good, quantity, path2}) {
             <p className="modal__price">{quantity} шт.</p>
             <p>{good.price} руб.</p>
           </div>
-          <p className="modal__text-cart"><span><img className="modal__check" src={check} alt="check" width='38' height='28' /></span>Добавлено в корзину</p>
+          <p className="modal__text-cart"><span><img className="modal__check" src={'/img/check.svg'} alt="check" width='38' height='28' /></span>Добавлено в корзину</p>
           <ButtonCart path1={'/cart'} text1={'Перейти в корзину'} getClosedModal = {getClosedModal} path2={path2}/>
         </div>
         <button type="button" className="modal__button-closed" onClick={getClosedModal}>

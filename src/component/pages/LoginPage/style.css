@@ -1,21 +1,3 @@
-.login {
-  position: relative;
-}
-
-.login::after {
-  content: "";
-  position: absolute;
-  top: -100px;
-  left: 0;
-  background-image: url(../../../img/login.png);
-  background-repeat: no-repeat;
-  background-position: left --200px;
-  width: 750px;
-  height: 1000px;
-  background-size: contain;
-  z-index: -1;
-}
-
 .login__container {
   margin-right: 50px;
 }

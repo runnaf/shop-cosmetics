@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
-import uops from '../../../img/oups.png'
 import "./style.css"
 
 export function EmptyCart({children}) {
   return (
     <div className='cart__empty-container'>
-      <img src={uops} width='600px' alt='отсутвует товар' />
+      <img src={'/img/oups.png'} width='600px' alt='отсутвует товар' />
       <p>Упс...</p>
       {children ? children : <>
         <p>Кажется Вы еще не выбрали товары.</p>        

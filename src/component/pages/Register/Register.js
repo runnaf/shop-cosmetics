@@ -12,6 +12,7 @@ export function Register() {
       <TitleMain text={"Регистрация"} />
       <SingUp />
       <p>Уже есть аккаунт? <Link className='register__login-link' to="/login">Войдите</Link></p>
+      <img className='sing-up__image' src='/img/register.png' alt='soup' />
     </section>
   )
 }

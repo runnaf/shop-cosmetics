@@ -17,6 +17,7 @@ export function LoginPage() {
           или <Link className="login__register-link" to="/register"> &nbsp; &nbsp;зарегистрируйтесь</Link>
         </p>
       </div>
+      <img src='/img/login.png' alt='soup' className='login__img'/>
     </section>
   )
 }

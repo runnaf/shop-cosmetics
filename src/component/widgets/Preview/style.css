@@ -4,15 +4,14 @@
   padding-top: 134px;
 }
 
-.preview::after {
-  content: "";
+.preview__background {
   position: absolute;
   top: 10px;
-  width: calc(100% - (50% - 720px));
-  height: 100%;
-  background-image: url(../../../img/preview-background.png);
-  background-repeat: no-repeat;
-  background-position: calc(50% + 345px) top;  
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  max-height: 800px;
+  left: 50%;  
   transition: background-image 0.05s ease-in-out 0.1s;
   animation-name: Appearance;
   animation-duration: 5s;
@@ -113,25 +112,13 @@
   margin-bottom: 55px;
 }
 
-@media (max-width: 1500px) {
-  .preview::after {
-    width: calc(100% - (50% - 450px));
-    background-position: calc(50% + 100px) top;
-  }
-}
-
 @media (max-width: 1200px) {	
   .preview {
     position: relative;
     min-height: 550px;
     padding-top: 100px;
   }
-  
-  .preview::after {
-    width: calc(100% - (50% - 300px));
-    background-position: calc(50% + 150px) top;  
-  }
-  
+
   .preview a {
     padding: 14px 25px;
     width: 35px;
@@ -188,10 +175,6 @@
     padding-top: 80px;
   }
   
-  .preview::after {
-    background-position: calc(50% + 150px) top;  
-  }
-  
   .preview a {
     padding: 10px 10px;
     width: 30px;
@@ -243,7 +226,7 @@
 }
 
 @media (max-width: 768px) {
-  .preview::after {
+  .preview__background {
     width: calc(100% - 20%);
     background-position: -100px top;
     border-radius: 300px 0px 300px 300px; 

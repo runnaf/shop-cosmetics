@@ -1,9 +1,7 @@
-import uops from '../../../img/oups.png'
-
 export function EmptyGood({handleClick}) {
   return (
     <div className='cart__empty-container'>
-      <img src={uops} width='600px' alt='отсутвует товар' />
+      <img src={'/img/oups.png'} width='600px' alt='отсутвует товар' />
       <p>Упс...</p>
       <p>Кажется мы ничего не нашли</p>
       <p>Вам могут понравится наши товары</p>    
