@@ -1,0 +1,17 @@
+.register {
+  padding-left: 50px;
+}
+
+.register__login-link {
+  color: #85D8E3;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.register__login-link:hover {
+  color: #FCC066;
+}
+
+.register__login-link:active {
+  color: #FF9900;
+}

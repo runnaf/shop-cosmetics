@@ -1,0 +1,40 @@
+.login {
+  position: relative;
+}
+
+.login::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background-image: url(../../../img/login.png);
+  background-repeat: no-repeat;
+  background-position: left --200px;
+  width: 750px;
+  height: 1000px;
+  background-size: contain;
+  z-index: -1;
+}
+
+.login__container {
+  margin-right: 50px;
+}
+
+.login__register-link {
+  color: #85D8E3;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.login__register-link:hover {
+  color: #FCC066;
+}
+
+.login__register-link:active {
+  color: #FF9900;
+}
+
+.login__container-content {
+  display: flex;
+  justify-content: flex-end;
+}

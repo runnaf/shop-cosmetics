@@ -1,0 +1,17 @@
+.sing-up {
+  position: relative;
+}
+
+.sing-up::after {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: 0;
+  background-image: url(../../../img/register.png);
+  background-repeat: no-repeat;
+  background-position: left -150px;
+  width: 750px;
+  height: 1000px;
+  background-size: contain;
+  z-index: -1;
+}
