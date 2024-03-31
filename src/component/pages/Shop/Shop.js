@@ -92,7 +92,7 @@ export function Shop() {
 
   useEffect(()=>{
     setDataArray(goodsSearch)
-  },[search])
+  }, [search])
   
   return(
     <section className={`section`}>

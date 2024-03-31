@@ -1,8 +1,8 @@
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  HashRouter
 } from 'react-router-dom';
 
 import { useState } from 'react';
@@ -62,7 +62,7 @@ export function NavigationHeader () {
   }
 
   return (
-    <Router>
+    <HashRouter>
       <div className="content">
         <nav className={`header section ${state ? 'header--opened' : 'header--closed'}`}>
           <Logo />
@@ -121,6 +121,6 @@ export function NavigationHeader () {
         </Routes>
       </div>      
       <Footer />
-    </Router>
+    </HashRouter>
   )
 }
